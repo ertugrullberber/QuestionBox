@@ -8,6 +8,14 @@
 import UIKit
 
 final class NavigationHelper {
+    
+    static func initializeApp() {
+        if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+            let mainTabBarController = MainTabBarController()
+            appDelegate.window?.rootViewController = mainTabBarController
+            appDelegate.window?.makeKeyAndVisible()
+        }
+    }
 
     static func topViewController() -> UIViewController? {
         let scenes = UIApplication.shared.connectedScenes

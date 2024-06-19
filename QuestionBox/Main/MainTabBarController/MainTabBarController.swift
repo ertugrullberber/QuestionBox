@@ -37,7 +37,7 @@ final class MainTabBarController: UITabBarController {
     }
 
     func setupCustomTabBar() {
-        let path : UIBezierPath = getPathForTabBar()
+        let path: UIBezierPath = getPathForTabBar()
         let shape = CAShapeLayer()
         shape.path = path.cgPath
         shape.lineWidth = 3
@@ -57,47 +57,35 @@ final class MainTabBarController: UITabBarController {
         self.setViewControllers(controllers, animated: true)
         for (index, _) in controllers.enumerated() {
             if index == 0 {
-                controllers[0].title = "Anasayfa"
-                controllers[0].tabBarItem.image = UIImage(named: IconTypes.homePageIcon.rawValue)
-                controllers[0].tabBarItem.selectedImage = UIImage(named: IconTypes.homePageClicked.rawValue)
+                controllers[0].title = "Oyunlar"
+                controllers[0].tabBarItem.image = UIImage(named: IconTypes.gamePage.rawValue)
+                controllers[0].tabBarItem.selectedImage = UIImage(named: IconTypes.gamePageClicked.rawValue)
             } else if index == 1 {
-                controllers[1].title = "İndirimler"
-                controllers[1].tabBarItem.image = UIImage(named: IconTypes.discountPageIcon.rawValue)
-                controllers[1].tabBarItem.selectedImage = UIImage(named: IconTypes.discountPageClicked.rawValue)
-            } else if index == 2 {
-                controllers[2].title = "Sepetim"
-                controllers[2].tabBarItem.image = UIImage(named: IconTypes.shoppingPageIcon.rawValue)
-                controllers[2].tabBarItem.selectedImage = UIImage(named: IconTypes.shoppingPageClicked.rawValue)
-            } else if index == 3 {
-                controllers[3].title = "Kategoriler"
-                controllers[3].tabBarItem.image = UIImage(named: IconTypes.categoriesPageIcon.rawValue)
-                controllers[3].tabBarItem.selectedImage = UIImage(named: IconTypes.categoriesPageIconClicked.rawValue)
+                controllers[1].title = "Kaydedilenler"
+                controllers[1].tabBarItem.image = UIImage(named: IconTypes.recordedPage.rawValue)
+                controllers[1].tabBarItem.selectedImage = UIImage(named: IconTypes.recordedPageClicked.rawValue)
             } else {
-                controllers[4].title = "Hesabım"
-                controllers[4].tabBarItem.image = UIImage(named: IconTypes.myaccountPageIcon.rawValue)
-                controllers[4].tabBarItem.selectedImage = UIImage(named: IconTypes.myaccountPageClicked.rawValue)
+                controllers[2].title = "Ayarlar"
+                controllers[2].tabBarItem.image = UIImage(named: IconTypes.settingsPage.rawValue)
+                controllers[2].tabBarItem.selectedImage = UIImage(named: IconTypes.settingsPageClicked.rawValue)
             }
         }
     }
 
     func getPathForTabBar() -> UIBezierPath {
-
         let frameWidth = self.tabBar.bounds.width
-        let frameHeight = self.tabBar.bounds.height*2
+        let frameHeight = self.tabBar.bounds.height * 2
         let cornerRadius: CGFloat = 40
 
         let path = UIBezierPath()
-
         path.move(to: CGPoint(x: 0, y: cornerRadius))
         path.addCurve(to: CGPoint(x: cornerRadius, y: 0),
                       controlPoint1: CGPoint(x: 0, y: 0),
                       controlPoint2: CGPoint(x: 0, y: 0))
-
         path.addLine(to: CGPoint(x: frameWidth - cornerRadius, y: 0))
         path.addCurve(to: CGPoint(x: frameWidth, y: cornerRadius),
                       controlPoint1: CGPoint(x: frameWidth, y: 0),
                       controlPoint2: CGPoint(x: frameWidth, y: 0))
-
         path.addLine(to: CGPoint(x: frameWidth, y: frameHeight))
         path.addLine(to: CGPoint(x: 0, y: frameHeight))
         path.close()
