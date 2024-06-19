@@ -50,7 +50,7 @@ final class MainTabBarController: UITabBarController {
         self.tabBar.layer.insertSublayer(shape, at: 0)
         self.tabBar.itemWidth = 40
         self.tabBar.itemPositioning = .fill
-        self.tabBar.tintColor = UIColor.fountainBlue
+        self.tabBar.tintColor = UIColor.tabBarBrown
     }
 
     func setTabBarControllers(controllers: [UIViewController]) {
@@ -109,7 +109,7 @@ extension MainTabBarController {
     }
 
     private func getBasketViewController() -> UINavigationController {
-        let viewController = SettingsPageViewController()
+        let viewController = SettingsPageViewController(menuType: .notPremiumAccount)
         viewController.viewModel = SettingsPageViewModel()
         let navController = NavigationHelper.navigationControllerFactory(viewController)
         return navController

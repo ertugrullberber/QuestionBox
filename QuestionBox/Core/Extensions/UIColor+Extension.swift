@@ -98,4 +98,5 @@ extension UIColor {
     static let fountainBlueWith2Blur = UIColor(hexString: "B3E4E9")
     static let socialButtonBorderGray = UIColor(hexString: "EBF0FF")
     static let socialButtonShadowBlue = UIColor(hexString: "40BFFF")
+    static let tabBarBrown = UIColor(hexString: "765341")
 }

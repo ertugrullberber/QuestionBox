@@ -14,4 +14,8 @@ enum IconTypes: String {
     case recordedPageClicked = "RecordedPageClicked"
     case settingsPage = "SettingsPage"
     case settingsPageClicked = "SettingsPageClicked"
+    case premiumAccount =  "PremiumAccount"
+    case restorePurchase = "RestorePurchase"
+    case rateTheApp = "RateTheApp"
+    case sendFeedback = "SendFeedback"
 }
