@@ -17,14 +17,14 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6ch-Yp-4i7">
-                        <rect key="frame" x="16" y="3" width="45" height="45"/>
+                        <rect key="frame" x="16" y="13" width="25" height="25"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="45" id="iOS-2z-bAq"/>
-                            <constraint firstAttribute="width" constant="45" id="xSE-Oe-2ju"/>
+                            <constraint firstAttribute="height" constant="25" id="iOS-2z-bAq"/>
+                            <constraint firstAttribute="width" constant="25" id="xSE-Oe-2ju"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jsm-ni-tQk">
-                        <rect key="frame" x="69" y="7" width="235" height="37"/>
+                        <rect key="frame" x="49" y="7" width="246" height="37"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -32,12 +32,12 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="6ch-Yp-4i7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="CGk-uz-6Fo"/>
-                    <constraint firstItem="6ch-Yp-4i7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="DYl-sl-wep"/>
+                    <constraint firstItem="6ch-Yp-4i7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="DYl-sl-wep"/>
                     <constraint firstItem="Jsm-ni-tQk" firstAttribute="leading" secondItem="6ch-Yp-4i7" secondAttribute="trailing" constant="8" id="Grb-0u-iI7"/>
-                    <constraint firstAttribute="trailing" secondItem="Jsm-ni-tQk" secondAttribute="trailing" constant="16" id="I6B-ys-oTD"/>
+                    <constraint firstAttribute="trailing" secondItem="Jsm-ni-tQk" secondAttribute="trailing" constant="25" id="I6B-ys-oTD"/>
                     <constraint firstAttribute="bottom" secondItem="Jsm-ni-tQk" secondAttribute="bottom" constant="6" id="IMB-bH-puO"/>
                     <constraint firstItem="Jsm-ni-tQk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="kgZ-0N-lj4"/>
-                    <constraint firstAttribute="bottom" secondItem="6ch-Yp-4i7" secondAttribute="bottom" constant="2" id="n8K-ZU-zXo"/>
+                    <constraint firstAttribute="bottom" secondItem="6ch-Yp-4i7" secondAttribute="bottom" constant="12" id="n8K-ZU-zXo"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

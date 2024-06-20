@@ -14,7 +14,16 @@ final class SettingsPageTableViewCell: BaseTableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        configureUI()
     }
-    
+
+    func setUpPremiumAccount(premiumSettingsPageModel: PremiumSettingsPageModel) {
+        settingsName.text = premiumSettingsPageModel.getName()
+        settingsIcon.image = premiumSettingsPageModel.getIcon()
+    }
+
+    func setUpNotPremiumAccount(notPremiumSettingsMenuItems: NotPremiumSettingsMenuItems) {
+        settingsName.text = notPremiumSettingsMenuItems.getName()
+        settingsIcon.image = notPremiumSettingsMenuItems.getIcon()
+    }
 }

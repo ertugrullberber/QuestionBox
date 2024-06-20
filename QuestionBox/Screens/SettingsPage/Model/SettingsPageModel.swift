@@ -30,18 +30,18 @@ enum NotPremiumSettingsMenuItems: Int {
         case .sendFeedback:
             return "Geri Bildirim Gönder"
         }
+    }
 
-        func getIcon() -> UIImage {
-            switch self {
-            case .getPremiumAccount:
-                return UIImage().getImage(imageName: .premiumAccount)
-            case .restorePurchases:
-                return UIImage().getImage(imageName: .restorePurchase)
-            case .rateTheApp:
-                return UIImage().getImage(imageName: .rateTheApp)
-            case .sendFeedback:
-                return UIImage().getImage(imageName: .sendFeedback)
-            }
+    func getIcon() -> UIImage {
+        switch self {
+        case .getPremiumAccount:
+            return UIImage().getImage(imageName: .premiumAccount)
+        case .restorePurchases:
+            return UIImage().getImage(imageName: .restorePurchase)
+        case .rateTheApp:
+            return UIImage().getImage(imageName: .rateTheApp)
+        case .sendFeedback:
+            return UIImage().getImage(imageName: .sendFeedback)
         }
     }
 }

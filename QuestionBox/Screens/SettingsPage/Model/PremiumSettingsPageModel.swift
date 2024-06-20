@@ -8,7 +8,6 @@
 import Foundation
 import UIKit
 
-
 enum PremiumSettingsPageModel: Int {
     case premium
 
@@ -22,7 +21,7 @@ enum PremiumSettingsPageModel: Int {
     func getIcon() -> UIImage {
         switch self {
         case .premium:
-            return UIImage().getImage(imageName: "")
+            return UIImage().getImage(imageName: IconTypes.premiumAccount)
         }
     }
 }
