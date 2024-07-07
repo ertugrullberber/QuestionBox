@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5834945A2C3B19F400A49E80 /* QuestionDetailCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583494582C3B19F400A49E80 /* QuestionDetailCardViewController.swift */; };
+		5834945B2C3B19F400A49E80 /* QuestionDetailCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 583494592C3B19F400A49E80 /* QuestionDetailCardViewController.xib */; };
+		5834945F2C3B1B1C00A49E80 /* QuestionDetailCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5834945D2C3B1B1C00A49E80 /* QuestionDetailCardCollectionViewCell.swift */; };
+		583494602C3B1B1C00A49E80 /* QuestionDetailCardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5834945E2C3B1B1C00A49E80 /* QuestionDetailCardCollectionViewCell.xib */; };
+		587A987D2C31AF3E001A5F22 /* HomePageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 587A987C2C31AF3E001A5F22 /* HomePageCollectionViewCell.xib */; };
+		587A987E2C31AF3E001A5F22 /* HomePageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587A987B2C31AF3E001A5F22 /* HomePageCollectionViewCell.swift */; };
 		58A1ACBE2C20669D0088E1AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A1ACBD2C20669D0088E1AC /* AppDelegate.swift */; };
 		58A1ACC02C20669D0088E1AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A1ACBF2C20669D0088E1AC /* SceneDelegate.swift */; };
 		58A1ACC72C20669E0088E1AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58A1ACC62C20669E0088E1AC /* Assets.xcassets */; };
@@ -48,9 +54,16 @@
 		58A1AD2B2C2361080088E1AC /* SettingsPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A1AD2A2C2361080088E1AC /* SettingsPageModel.swift */; };
 		58A1AD2D2C236B240088E1AC /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A1AD2C2C236B240088E1AC /* AuthManager.swift */; };
 		58A1AD2F2C236BB80088E1AC /* PremiumSettingsPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A1AD2E2C236BB80088E1AC /* PremiumSettingsPageModel.swift */; };
+		58A1AD322C2831090088E1AC /* QuestionsBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A1AD312C2831090088E1AC /* QuestionsBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		583494582C3B19F400A49E80 /* QuestionDetailCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDetailCardViewController.swift; sourceTree = "<group>"; };
+		583494592C3B19F400A49E80 /* QuestionDetailCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionDetailCardViewController.xib; sourceTree = "<group>"; };
+		5834945D2C3B1B1C00A49E80 /* QuestionDetailCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDetailCardCollectionViewCell.swift; sourceTree = "<group>"; };
+		5834945E2C3B1B1C00A49E80 /* QuestionDetailCardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionDetailCardCollectionViewCell.xib; sourceTree = "<group>"; };
+		587A987B2C31AF3E001A5F22 /* HomePageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCollectionViewCell.swift; sourceTree = "<group>"; };
+		587A987C2C31AF3E001A5F22 /* HomePageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePageCollectionViewCell.xib; sourceTree = "<group>"; };
 		58A1ACBA2C20669D0088E1AC /* QuestionBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuestionBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58A1ACBD2C20669D0088E1AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58A1ACBF2C20669D0088E1AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +107,7 @@
 		58A1AD2A2C2361080088E1AC /* SettingsPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPageModel.swift; sourceTree = "<group>"; };
 		58A1AD2C2C236B240088E1AC /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		58A1AD2E2C236BB80088E1AC /* PremiumSettingsPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumSettingsPageModel.swift; sourceTree = "<group>"; };
+		58A1AD312C2831090088E1AC /* QuestionsBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +121,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		583494572C3B199A00A49E80 /* QuestionDetailCard */ = {
+			isa = PBXGroup;
+			children = (
+				5834945C2C3B1AC600A49E80 /* QuestionDetailCardCell */,
+				583494582C3B19F400A49E80 /* QuestionDetailCardViewController.swift */,
+				583494592C3B19F400A49E80 /* QuestionDetailCardViewController.xib */,
+			);
+			path = QuestionDetailCard;
+			sourceTree = "<group>";
+		};
+		5834945C2C3B1AC600A49E80 /* QuestionDetailCardCell */ = {
+			isa = PBXGroup;
+			children = (
+				5834945D2C3B1B1C00A49E80 /* QuestionDetailCardCollectionViewCell.swift */,
+				5834945E2C3B1B1C00A49E80 /* QuestionDetailCardCollectionViewCell.xib */,
+			);
+			path = QuestionDetailCardCell;
+			sourceTree = "<group>";
+		};
+		587A987A2C31AF2B001A5F22 /* HomePageCell */ = {
+			isa = PBXGroup;
+			children = (
+				587A987B2C31AF3E001A5F22 /* HomePageCollectionViewCell.swift */,
+				587A987C2C31AF3E001A5F22 /* HomePageCollectionViewCell.xib */,
+			);
+			path = HomePageCell;
+			sourceTree = "<group>";
+		};
 		58A1ACB12C20669D0088E1AC = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +201,7 @@
 		58A1ACD62C206CB50088E1AC /* CommonViews */ = {
 			isa = PBXGroup;
 			children = (
+				58A1AD302C2830ED0088E1AC /* Questions */,
 				58A1ACFA2C2078B40088E1AC /* BaseView */,
 			);
 			path = CommonViews;
@@ -182,6 +225,7 @@
 		58A1ACD82C206CE20088E1AC /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				583494572C3B199A00A49E80 /* QuestionDetailCard */,
 				58A1AD162C207FD60088E1AC /* SettingsPage */,
 				58A1AD112C207F7F0088E1AC /* RecordedPage */,
 				58A1AD0C2C207F640088E1AC /* HomePage */,
@@ -237,6 +281,7 @@
 		58A1AD0C2C207F640088E1AC /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				587A987A2C31AF2B001A5F22 /* HomePageCell */,
 				58A1AD212C20810E0088E1AC /* ViewModel */,
 				58A1AD0D2C207F780088E1AC /* HomePageViewController.swift */,
 				58A1AD0E2C207F780088E1AC /* HomePageViewController.xib */,
@@ -308,6 +353,14 @@
 			path = SettingsPageCell;
 			sourceTree = "<group>";
 		};
+		58A1AD302C2830ED0088E1AC /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+				58A1AD312C2831090088E1AC /* QuestionsBox.swift */,
+			);
+			path = Questions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -367,11 +420,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				58A1AD102C207F780088E1AC /* HomePageViewController.xib in Resources */,
+				5834945B2C3B19F400A49E80 /* QuestionDetailCardViewController.xib in Resources */,
 				58A1AD292C235EBF0088E1AC /* SettingsPageTableViewCell.xib in Resources */,
 				58A1ACC72C20669E0088E1AC /* Assets.xcassets in Resources */,
 				58A1AD1A2C2080090088E1AC /* SettingsPageViewController.xib in Resources */,
+				587A987D2C31AF3E001A5F22 /* HomePageCollectionViewCell.xib in Resources */,
 				58A1AD152C207FC60088E1AC /* RecordedPageViewController.xib in Resources */,
 				58A1ACCA2C20669E0088E1AC /* Base in Resources */,
+				583494602C3B1B1C00A49E80 /* QuestionDetailCardCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,14 +443,17 @@
 				58A1AD0F2C207F780088E1AC /* HomePageViewController.swift in Sources */,
 				58A1AD2F2C236BB80088E1AC /* PremiumSettingsPageModel.swift in Sources */,
 				58A1ACDF2C2070BF0088E1AC /* UIView+Extension.swift in Sources */,
+				5834945A2C3B19F400A49E80 /* QuestionDetailCardViewController.swift in Sources */,
 				58A1AD232C2081200088E1AC /* HomePageViewModel.swift in Sources */,
 				58A1AD192C2080090088E1AC /* SettingsPageViewController.swift in Sources */,
 				58A1AD022C207C3F0088E1AC /* PopUpDelegate.swift in Sources */,
 				58A1AD2D2C236B240088E1AC /* AuthManager.swift in Sources */,
 				58A1AD142C207FC60088E1AC /* RecordedPageViewController.swift in Sources */,
 				58A1ACF32C2072900088E1AC /* TypeAliases.swift in Sources */,
+				587A987E2C31AF3E001A5F22 /* HomePageCollectionViewCell.swift in Sources */,
 				58A1AD002C207BDB0088E1AC /* BaseViewController.swift in Sources */,
 				58A1ACEB2C2071F10088E1AC /* NSAttributedString+Extensions.swift in Sources */,
+				58A1AD322C2831090088E1AC /* QuestionsBox.swift in Sources */,
 				58A1AD282C235EBF0088E1AC /* SettingsPageTableViewCell.swift in Sources */,
 				58A1ACBE2C20669D0088E1AC /* AppDelegate.swift in Sources */,
 				58A1ACE32C20713C0088E1AC /* UIImage+Extension.swift in Sources */,
@@ -406,6 +465,7 @@
 				58A1ACE62C2071640088E1AC /* IconTypes.swift in Sources */,
 				58A1ACF12C20726E0088E1AC /* Observable.swift in Sources */,
 				58A1ACF72C2072B70088E1AC /* NavigationHelper.swift in Sources */,
+				5834945F2C3B1B1C00A49E80 /* QuestionDetailCardCollectionViewCell.swift in Sources */,
 				58A1AD202C2080FF0088E1AC /* RecordedPageViewModel.swift in Sources */,
 				58A1AD062C207CB80088E1AC /* BaseCollectionViewCell.swift in Sources */,
 				58A1AD1D2C2080CC0088E1AC /* SettingsPageViewModel.swift in Sources */,

@@ -41,33 +41,43 @@ final class MainTabBarController: UITabBarController {
         let shape = CAShapeLayer()
         shape.path = path.cgPath
         shape.lineWidth = 3
-        shape.strokeColor = UIColor.white.cgColor
-        shape.fillColor = UIColor.white.cgColor
+        shape.strokeColor = UIColor.clear.cgColor
+        shape.fillColor = UIColor.black.withAlphaComponent(0.5).cgColor
+        tabBar.layer.insertSublayer(shape, at: 0)
+
+        // Gölge eklemek için
         tabBar.layer.shadowOffset = CGSize(width: 0, height: 0)
         tabBar.layer.shadowRadius = 2
         tabBar.layer.shadowColor = UIColor.black.cgColor
         tabBar.layer.shadowOpacity = 0.3
-        self.tabBar.layer.insertSublayer(shape, at: 0)
-        self.tabBar.itemWidth = 40
-        self.tabBar.itemPositioning = .fill
-        self.tabBar.tintColor = UIColor.tabBarBrown
+
+        tabBar.itemWidth = 40
+        tabBar.itemPositioning = .fill
+
+        // Tab bar arka planını daha şeffaf ve siyah yapmak için
+        let blurEffect = UIBlurEffect(style: .dark)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = tabBar.bounds
+        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        tabBar.insertSubview(blurEffectView, at: 0)
+        tabBar.isTranslucent = true
     }
 
     func setTabBarControllers(controllers: [UIViewController]) {
         self.setViewControllers(controllers, animated: true)
-        for (index, _) in controllers.enumerated() {
-            if index == 0 {
-                controllers[0].title = "Oyunlar"
-                controllers[0].tabBarItem.image = UIImage(named: IconTypes.gamePage.rawValue)
-                controllers[0].tabBarItem.selectedImage = UIImage(named: IconTypes.gamePageClicked.rawValue)
-            } else if index == 1 {
-                controllers[1].title = "Kaydedilenler"
-                controllers[1].tabBarItem.image = UIImage(named: IconTypes.recordedPage.rawValue)
-                controllers[1].tabBarItem.selectedImage = UIImage(named: IconTypes.recordedPageClicked.rawValue)
-            } else {
-                controllers[2].title = "Ayarlar"
-                controllers[2].tabBarItem.image = UIImage(named: IconTypes.settingsPage.rawValue)
-                controllers[2].tabBarItem.selectedImage = UIImage(named: IconTypes.settingsPageClicked.rawValue)
+        for (index, controller) in controllers.enumerated() {
+            switch index {
+            case 0:
+                controller.tabBarItem.image = UIImage(named: IconTypes.gamePage.rawValue)?.withRenderingMode(.alwaysOriginal)
+                controller.tabBarItem.selectedImage = UIImage(named: IconTypes.gamePageClicked.rawValue)?.withRenderingMode(.alwaysOriginal)
+            case 1:
+                controller.tabBarItem.image = UIImage(named: IconTypes.recordedPage.rawValue)?.withRenderingMode(.alwaysOriginal)
+                controller.tabBarItem.selectedImage = UIImage(named: IconTypes.recordedPageClicked.rawValue)?.withRenderingMode(.alwaysOriginal)
+            case 2:
+                controller.tabBarItem.image = UIImage(named: IconTypes.settingsPage.rawValue)?.withRenderingMode(.alwaysOriginal)
+                controller.tabBarItem.selectedImage = UIImage(named: IconTypes.settingsPageClicked.rawValue)?.withRenderingMode(.alwaysOriginal)
+            default:
+                break
             }
         }
     }
@@ -92,6 +102,7 @@ final class MainTabBarController: UITabBarController {
         return path
     }
 }
+
 extension MainTabBarController {
 
     private func getHomeViewController() -> UINavigationController {

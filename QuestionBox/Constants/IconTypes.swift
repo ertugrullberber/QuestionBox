@@ -18,4 +18,7 @@ enum IconTypes: String {
     case restorePurchase = "RestorePurchase"
     case rateTheApp = "RateTheApp"
     case sendFeedback = "SendFeedback"
+    case flort = "Flört"
+    case darlingFunny = "SevgiliyeKomik"
+    case darlingLove = "SevgiliyeRomantik"
 }

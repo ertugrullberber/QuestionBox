@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomePageCollectionViewCell" customModule="QuestionBox" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="89" height="89"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="89" height="89"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mvg-Yz-w8p">
+                        <rect key="frame" x="0.0" y="0.0" width="89" height="89"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arkadaşlarım İçin Zor Sorular" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIM-aV-PT2">
+                                <rect key="frame" x="5" y="56" width="78" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="iUA-HX-vxy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GamePage" translatesAutoresizingMaskIntoConstraints="NO" id="eOm-5u-qf7">
+                                <rect key="frame" x="22" y="7" width="45" height="45"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="eOm-5u-qf7" secondAttribute="trailing" constant="22" id="2B3-EH-kWs"/>
+                            <constraint firstItem="eOm-5u-qf7" firstAttribute="leading" secondItem="Mvg-Yz-w8p" secondAttribute="leading" constant="22" id="2Xq-ej-FHq"/>
+                            <constraint firstItem="eOm-5u-qf7" firstAttribute="top" secondItem="Mvg-Yz-w8p" secondAttribute="top" constant="7" id="CtI-xV-q2I"/>
+                            <constraint firstItem="gIM-aV-PT2" firstAttribute="top" secondItem="eOm-5u-qf7" secondAttribute="bottom" constant="4" id="J3n-o9-vK1"/>
+                            <constraint firstAttribute="bottom" secondItem="gIM-aV-PT2" secondAttribute="bottom" constant="4" id="bAb-qe-DcY"/>
+                            <constraint firstAttribute="trailing" secondItem="gIM-aV-PT2" secondAttribute="trailing" constant="6" id="bol-1T-YH8"/>
+                            <constraint firstItem="gIM-aV-PT2" firstAttribute="leading" secondItem="Mvg-Yz-w8p" secondAttribute="leading" constant="5" id="s1g-kw-qri"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Mvg-Yz-w8p" firstAttribute="bottom" secondItem="gTV-IL-0wX" secondAttribute="bottom" id="5LL-Hq-2Sw"/>
+                <constraint firstAttribute="top" secondItem="Mvg-Yz-w8p" secondAttribute="top" id="nmM-Bp-qvU"/>
+                <constraint firstItem="Mvg-Yz-w8p" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rYc-co-3i8"/>
+                <constraint firstAttribute="trailing" secondItem="Mvg-Yz-w8p" secondAttribute="trailing" id="tOs-sK-p9h"/>
+            </constraints>
+            <size key="customSize" width="89" height="89"/>
+            <connections>
+                <outlet property="cellImage" destination="eOm-5u-qf7" id="oZl-Tw-Ava"/>
+                <outlet property="cellTitle" destination="gIM-aV-PT2" id="cSZ-fU-FNg"/>
+                <outlet property="cellView" destination="Mvg-Yz-w8p" id="cX4-n3-utV"/>
+            </connections>
+            <point key="canvasLocation" x="95.419847328244273" y="33.450704225352112"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="GamePage" width="18" height="18"/>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
