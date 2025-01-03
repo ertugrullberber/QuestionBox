@@ -24,7 +24,7 @@ final class HomePageCollectionViewCell: BaseCollectionViewCell {
         if let icon = UIImage(named: category.iconType.rawValue) {
             cellImage.image = icon
         } else {
-            cellImage.image = UIImage(named: "default_image") // Placeholder image
+            cellImage.image = UIImage(named: "default_image")
         }
     }
     

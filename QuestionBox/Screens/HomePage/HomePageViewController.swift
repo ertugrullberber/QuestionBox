@@ -18,6 +18,11 @@ class HomePageViewController: BaseViewController {
         registerCollection()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        navigationController?.navigationBar.isHidden = true
+    }
+    
     private func registerCollection() {
         homeCollectionView.dataSource = self
         homeCollectionView.delegate = self
